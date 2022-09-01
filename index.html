@@ -28,21 +28,21 @@
                 <span class="inputs">
                     <ul>
                         <li><label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="user.firstname"></li>
+                    <input type="text" id="fname" name="user.firstname" required></li>
                         <li><label for="email">Email:</label>
-                    <input type="mail" id="email" name="user.email"></li>
+                    <input type="mail" id="email" name="user.email" required></li>
                         <li><label for="password1">Password:</label>
-                    <input type="password" id="password1" name="user.passwordwrite"></li>
+                    <input type="password" id="password1" name="user.passwordwrite" required minlength="6" maxlength="24"></li>
                     </ul> 
                 </span>
                 <span class="inputs">
                     <ul>
                         <li><label for="lname">Last Name:</label>
-                    <input type="text" id="lname" name="user.lastname"></li>
+                    <input type="text" id="lname" name="user.lastname" required></li>
                         <li><label for="phonenumber">Phonenumber:</label>
-                    <input type="tel" id="phonenumber" name="user.phone"></li>
+                    <input type="tel" id="phonenumber" name="user.phone" required pattern="[0-9]*$" maxlength="10"></li>
                         <li><label for="password2">Confirm Password:</label>
-                    <input type="password" id="password2" name="user.passwordconfirm"></li>
+                    <input type="password" id="password2" name="user.passwordconfirm" required minlength="6" maxlength="24"></li>
                     </ul> 
                 </span>
             </div>

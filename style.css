@@ -4,13 +4,7 @@
 body{
     padding: 0%; margin: 0%;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-}
-
-h1{
-    padding: 0%; margin: 0%;
-    display: inline;
 }
 
 #picture{
@@ -33,25 +27,36 @@ h1{
 
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--font);
+}
+#picture>h1{
+    display: inline;
 }
 #picture>#piccredit{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--font);
 }
 
 #userinput{
     display: flex;
-    padding: 0%; margin: 0%;
     flex-direction: column;
-    justify-content: space-between;
+}
+.topparagraph{
+    padding: 15vh 10vh 5vh;
+    background-color: whitesmoke;
 }
 
-#info{
+#userinput>#info{
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
-#allinputs{
+#sign-text{
+    padding: 0px 0px 0px 40px;
+    font-family: var(--font);
+    font-size: 20px;
+}
+
+#info>#allinputs{
     display: flex;
     flex-direction: row;
 }
@@ -67,21 +72,32 @@ li{
 
     color: rgb(53, 53, 53);
     font-family: var(--font);
+    font-size: 15px;
+}
+input{
     font-size: 20px;
+    font-family: var(--font);
+    padding: 5px 20px 5px 5px;
 }
-.topparagraph{
-    min-height: auto;
-    padding: 15vh 10vh 5vh;
-    background-color: whitesmoke;
+input:valid{
+    border: yellowgreen 2px solid;
 }
-.bottomparagraph{
-    min-height: auto;
-    padding: 2vh 10vh 15vh;
-    background-color: whitesmoke;
+input:invalid{
+    border:tomato 2px solid
 }
 
-#sign-text{
-    padding: 0px 0px 0px 40px;
+.bottomparagraph{
+    min-height: 80px;
+    padding: 2vh 10vh 8vh;
+    background-color: whitesmoke;
+}
+.bottomparagraph>button{
+    background-color: steelblue;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px 20px;
+
     font-family: var(--font);
     font-size: 20px;
+    color: white;
 }
