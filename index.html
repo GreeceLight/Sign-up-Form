@@ -30,7 +30,7 @@
                         <li><label for="fname">First Name:</label>
                     <input type="text" id="fname" name="user.firstname" required></li>
                         <li><label for="email">Email:</label>
-                    <input type="mail" id="email" name="user.email" required></li>
+                    <input type="mail" id="email" name="user.email" required pattern="[a-z0-9._%-]+@[a-z0-9.-]*$"></li>
                         <li><label for="password1">Password:</label>
                     <input type="password" id="password1" name="user.passwordwrite" required minlength="6" maxlength="24"></li>
                     </ul> 
